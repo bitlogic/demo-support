@@ -1,12 +1,21 @@
 # Bienvenido al equipo!
 
-Bienvenido al equipo de Selección Electrónica de Mejor Mascota! El objetivo de este proyecto es proveer un sistema donde nuestros clientes puedan elegir cuál animal brinda más cariño y mejor compañía.
+Bienvenido al equipo de Votacion Electrónica de Mejor Mascota! El objetivo de este proyecto es proveer un sistema donde nuestros clientes puedan elegir cuál animal brinda más cariño y mejor compañía.
 
-Podés ver los resultados de la elección en http://result.bitlogic.party/ y votar en http://vote.bitlogic.party/.
+La aplicacion esta corriendo actualmente en produccion y se puede acceder a ver los resultados en http://result.bitlogic.party/ y votar en http://vote.bitlogic.party/.
 
-Como es nuestra tradición, creemos que la mejor manera de sumarte al equipo es que resuelvas un defecto y hagas tu primer despliegue a producción antes de terminar la semana. Pronto te llegará una notificación a tu correo con los detalles de tu asignación.
+Como es nuestra tradición, creemos que la mejor manera de sumarte al equipo es que resuelvas un defecto y hagas tu primer despliegue a producción antes de terminar el dia. Pronto te llegará una notificación a tu correo con los detalles de tu asignación.
 
-A continuación, encontrarás el proceso de desarrollo:
+A continuación, encontrarás el proceso de desarrollo para que te vayas familiarizando:
+
+
+## Setup de Entorno de desarrollo
+
+1. Pre-requisitos
+* Docker 
+* GIT
+* Tu editor de codigo favorito
+
 
 1. El sistema usa nginx para rutear los _requests_ al servicio que corresponda según el nombre de _host_. Configura los siguientes equipos en tu máquina:
    ```bash
@@ -23,6 +32,8 @@ A continuación, encontrarás el proceso de desarrollo:
    ```bash
    $ git clone git@github.com:bitlogic/demo-vote.git
    ```
+   
+## Primer Fix y Despliegue a Produccion
 
 1. Completa tu asignación.
    ```bash
