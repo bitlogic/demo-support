@@ -14,7 +14,12 @@ A continuación, encontrarás el proceso de desarrollo para que te vayas familia
 1. Pre-requisitos
    1. Docker
    1. GIT
-   1. Tu editor de codigo favorito.
+   1. Tu editor de codigo favorito
+   1. Drone.io cli
+      ```bash
+      $ curl http://downloads.drone.io/drone-cli/drone_darwin_amd64.tar.gz | tar zx
+      $ sudo cp drone /usr/local/bin
+      ```
 
 1. El sistema usa nginx para rutear los _requests_ al servicio que corresponda según el nombre de _host_. Configura los siguientes equipos en tu máquina:
    ```bash
