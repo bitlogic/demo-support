@@ -2,19 +2,29 @@
 
 Bienvenido al equipo de Votación Electrónica de Mejor Mascota! El objetivo de este proyecto es proveer un sistema donde nuestros clientes puedan elegir cuál animal brinda más cariño y mejor compañía.
 
+## Arquitectura
+
 La aplicación esta corriendo actualmente en producción y se puede ver los resultados en http://result.bitlogic.party/ y votar en http://vote.bitlogic.party/.
+
+Este sistema cuenta con cinco microservicios:
+* Una aplicación web Python que permite elegir entre dos opciones
+* Una cola Redis que recibe los votos
+* Un _worker_ .Net que consume votos y los almacena en...
+* Una base de datos Postgres con un volumen de Docker para persistencia
+* Una aplicación web Node.js para visualizar los resultados en tiempo real
+
+![Diagrama de arquitectura](architecture.png)
+
+## Setup de Entorno de desarrollo
 
 Como es nuestra tradición, creemos que la mejor manera de sumarte al equipo es que resuelvas un defecto y hagas tu primer despliegue a producción antes de terminar el dia. Pronto te llegará una notificación a tu correo con los detalles de tu asignación.
 
-A continuación, encontrarás el proceso de desarrollo para que te vayas familiarizando:
-
-
-## Setup de Entorno de desarrollo
+A continuación, encontrarás el proceso de desarrollo para que te vayas familiarizando.
 
 1. Pre-requisitos
    1. Docker
    1. GIT
-   1. Tu editor de codigo favorito
+   1. Tu editor de código favorito
    1. Drone.io cli
       ```bash
       $ curl http://downloads.drone.io/drone-cli/drone_darwin_amd64.tar.gz | tar zx
